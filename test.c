@@ -1,6 +1,12 @@
 #include <stdio.h>
+#include <string.h>
 
-int main(){
-  printf("This is a test file.\n");
-  printf("Hello 3 years guojianshu.\n");
+int main(void)
+{
+	char s1[100];
+    char *s2 = "welcom";
+    strncpy(s1, s2, strlen(s2));
+    printf("%d\n", strlen(s2));
+    printf("%s\n", s1);    
+    return 0;
 }
