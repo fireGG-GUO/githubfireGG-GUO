@@ -1,12 +1,16 @@
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
 int main(void)
 {
-	char s1[100];
-    char *s2 = "welcom";
-    strncpy(s1, s2, strlen(s2));
-    printf("%d\n", strlen(s2));
-    printf("%s\n", s1);    
+    char str[50] = "Linux app puts test";
+    puts("Hello World");
+    puts(str);
+
+    putchar(48);
+    putchar(49);
+    putchar(50);
+    putchar(51);
+    putchar('\n');
     return 0;
 }
